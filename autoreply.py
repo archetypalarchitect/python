@@ -1,4 +1,5 @@
 
+
 ##############################################################################################################
 ###### IMPORTS #############################################################################################
 ##############################################################################################################
@@ -10,7 +11,7 @@ from time import sleep
 import sys
 import requests
 from datetime import datetime 
-apiKey = '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'
+apiKey = ''
 gptAddr = 'https://api.openai.com/v1/chat/completions'
 
 ##############################################################################################################
@@ -92,12 +93,12 @@ def mainLoop(msg, time):
 
 def msgSender(number):
         default = 'You are replying to a text message received from your best friend. Generate an informal response, and always make sure to inlude a funny anecdote or joke'
-        girlfriend = '0422985151'
+        girlfriend = ''
         gfPrompt = 'You are replying to a text message received from your girlfriend. Generate an informal response, and always make sure to include how much you love her'
-        grandmotherNum = '0403493532'
+        grandmotherNum = ''
         grandmotherPrompt = 'You are replying to a text message received from your grandmother as her favourite grandson'
         if number == girlfriend:
-                print("nat prompt")
+                print("gf prompt")
                 return gfPrompt
         if number == grandmotherNum:
                 return grandmotherPrompt
